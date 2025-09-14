@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jersey 10", sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width:100vw;
+  height:100vw;
+  background-color: #333333;
+  color:white;
+}
+
+.header {
+    position: fixed;  
+    width:100%;
+}
+
+.brand {
+    font-size: 2rem;
+}
+
+.menu {
+    display:flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style:none;
+}
+
+.menu a {
+  color:white;
+  text-decoration: none;
+  padding:10px 20px;
+}
+
+.menu a:hover {
+    background-color: aqua;
+    color:#333333;
+    transition:ease-in .2s;
+}
+
+.menu a:not(:hover) {
+    transition:ease-in .2s;
+}
+
+.brand span {
+  color:aqua;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+    align-items: center;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.download-cv:hover {
+    background-color: white;
+    transition:ease-in .2s;
+}
+
+.download-cv:not(:hover) {
+    transition:ease-out .2s;
+}
