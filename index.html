@@ -10,19 +10,19 @@
 </head>
 <body>
     <div class="wrapper">
-      <header class ="header">
-        <nav class="navbar">
-            <div class="brand">
-                <h2>M<span>B</span></h2>
-            </div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#best-projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-      </header>  
+        <header class ="header">
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>M<span>B</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#best-projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>  
         <main class="main">
             <div id="home" class="home">
                 <video class="resume-video" loop autoplay muted>
@@ -105,12 +105,23 @@
                 </ul>
             </div>
             <div id="contact" class="contact">
-                <form action="https://formsubmit.co/your@email.com" method="POST"></form>
+                <h1>Send me a message...</h1>
+                <form action="https://formsubmit.co/marcblanquez2012@gmail.com" method="POST">
+                    <h3>Name</h3>
+                    <input class="contact-input" type="text" name="name" required>
+                    <h3>Email</h3>
+                    <input class="contact-input" type="email" name="email" required>
+                    <h3>Subject</h3>
+                    <input class="contact-input" type="text" name="subject" required>
+                    <h3>Message</h3>
+                    <textarea class = "contact-input" type="text" name="message" rows="4" required></textarea>
+                    <button type ="submit">Send</button>
+                </form>
             </div>
         </main>
+        <footer>
 
-    </div>
-
-  
+        </footer>
+    </div>  
 </body>
 </html>

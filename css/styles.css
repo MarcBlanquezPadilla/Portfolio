@@ -14,6 +14,39 @@ html {
   scroll-behavior: smooth;
 }
 
+@media(max-width: 4000px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+@media(max-width: 3000px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media(max-width: 2000px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media(max-width: 1000px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media(max-width: 750px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+
 .divider {
     width: 15rem;
     height: 0.5rem;
@@ -632,4 +665,96 @@ main {
     width: 100%;
     height: 100%;
     background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+
+.contact h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.contact-input {
+    background-color: transparent;
+    border: 3px solid aqua;
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 40rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact h1 {
+    font-size: 5rem ;   
+    color: aqua;
+}
+
+.contact-send {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}¡
+
+.contact-send-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.contact button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid aqua;
+    background-color: transparent;
+    color: aqua;
+    transition: ease 0.2s;
+}
+
+.contact button:hover {
+    transform: scale(1.1);
+    color: white;
+    border: 3px solid white;
+    box-shadow: 0 0 10px;
+    cursor: pointer;
+}
+
+@media(max-width:1000px)
+{
+    .contact {
+        gap: 3rem;
+    }
+
+    .contact h1 {
+        font-size: 2rem ;   
+    }
+    
+    .contact h3 {
+        font-size: 1.4rem;
+        color: white;
+    }
+
+    .contact-input {
+        font-size: 1rem;
+        padding: 0.3rem;
+        width: 20rem;
+    }
+
+    .contact button {
+        font-size: 1.4rem;
+    } 
 }
