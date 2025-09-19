@@ -300,11 +300,6 @@ main {
     box-shadow: 0 0 0.5rem;
 }
 
-.about-me-icons a p:hover{
-    color: white;
-    transition: ease 0.2s;
-}
-
 .typing-text span {
     position: relative;
 }
@@ -382,6 +377,35 @@ main {
     gap: 3rem;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.project-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.2rem solid aqua;
+    font-size: 2rem;
+    border-radius: 50%;
+    color:aqua;
+}
+
+.project-arrow:hover{
+    transform: scale(1.1);
+    color: white;
+    border: 0.2rem solid white;
+    transition: ease 0.2s;
+    box-shadow: 0 0 0.5rem;
+}
+
 .project-video {
     width: 70rem;
     border: 0.3rem solid aqua;   
@@ -393,7 +417,7 @@ main {
 }
 
 .project p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     width: 80rem;
 }
@@ -415,11 +439,6 @@ main {
     border: 0.2rem solid aqua;
     font-size: 2rem;
     border-radius: 50%;
-    color:aqua;
-}
-
-.project-icons a p {
-    font-size: 2.5rem;
     color:aqua;
 }
 
