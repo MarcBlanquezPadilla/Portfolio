@@ -352,7 +352,7 @@ main {
     }
 }
 
-.best-projects{
+.projects{
     width: 100vw;
     min-height: 70rem;
     height: 100vh;
@@ -365,181 +365,82 @@ main {
 
 }
 
-.best-projects h1 {
+.projects h1 {
     font-size: 5rem;
     color: white;
 }
 
-.best-projects h1 span {
+.projects h1 span {
     color: aqua;
 }
 
-.best-projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(1, 1fr); 
-    gap: 4rem;
-}
-
-.best-project {
-    width: 32rem;
-    height: 24em;
-    border: 0.5rem solid aqua;
-    transition: ease 0.1s;
+.project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.project-video {
+    width: 70rem;
+    border: 0.3rem solid aqua;   
+}
+
+.project h2 {
+    font-size: 3rem;
+    color:white;
+}
+
+.project p {
+    font-size: 1rem;
+    color: white;
+    width: 80rem;
+}
+
+.project-icons{
+    padding-top:1rem ;
+    transition: ease 0.5s;
+    display: flex;
     gap: 1rem;
 }
 
-.best-project h3 {
-    font-size: 3rem;
+.project-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.2rem solid aqua;
+    font-size: 2rem;
+    border-radius: 50%;
     color:aqua;
 }
 
-.best-project-container {
-    width: 24rem;
-    height: 13.5rem;
-}
-
-.best-project img {
-    width: 24rem;
-    height: 13.5rem;
-    position:absolute;
-}
-
-.best-project video{
-    width: 24rem;
-    height: 13.5rem;
-    position:absolute;
-    opacity: 0;
-}
-
-.best-project:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 1rem;
-    color: white;
-    border: 0.5rem solid white;
-    cursor: pointer;
-    transition: ease 0.1s;
-}
-
-.best-project:hover h3{
-    color: white;
-}
-
-.best-project:hover img{
-    opacity: 0;
-}
-
-.best-project:hover video{
-    opacity: 1;
-}
-
-@media(orientation: portrait)
-{
-    .best-projects-grid {
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(1, 1fr);
-    }
-
-    .best-projects{
-        gap: 4rem;
-    }
-
-    .best-projects-grid {
-        gap: 2rem;
-    }
-
-    .best-project {
-        width: 28rem;
-        height: 21em;
-    }
-
-    .best-project h3 {
+.project-icons a p {
     font-size: 2.5rem;
     color:aqua;
 }
-}
 
-.more-projects{
-    width: 100vw;
-    height: 100vh;
-    min-height: 70rem;
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 7rem;
-}
-
-.more-projects h1 {
-    font-size: 5rem;
-    color: white;
-}
-
-.more-projects h1 span {
-    color: aqua;
-}
-
-.more-projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 4rem;
-}
-
-.more-project {
-    width: 24rem;
-    height: 18em;
-    border: 0.5rem solid aqua;
-    transition: ease 0.1s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.more-project h3 {
-    font-size: 2.3rem;
-    color:aqua;
-}
-
-.more-project img {
-    width: 18rem;
-    height: 10rem;
-}
-
-.more-project:hover {
+.project-icons a:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 1rem;
     color: white;
-    border: 0.5rem solid white;
-    cursor: pointer;
-    transition: ease 0.1s;
+    border: 0.2rem solid white;
+    transition: ease 0.2s;
+    box-shadow: 0 0 0.5rem;
 }
 
-.more-project:hover h3{
+.project-icons a p:hover{
     color: white;
+    transition: ease 0.2s;
 }
-
-@media(orientation: portrait)
-{
-    .more-projects-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(3, 1fr); 
-    }
-}
-
 
 .contact{
     width: 100vw;
     height: 80vh;
     min-height: 55rem;
-    background-color: #333333;
+    background-color: #222222;
     display: flex;
     flex-direction: column;
     align-items: center;
