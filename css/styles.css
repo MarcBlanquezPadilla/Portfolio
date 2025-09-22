@@ -375,6 +375,22 @@ main {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease 0.3s;
+    transform: scale(0.9);
+}
+
+.project.active {
+
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project.hidden {
+    
+    display: none;
 }
 
 .project-container {
