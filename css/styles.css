@@ -371,7 +371,7 @@ main {
 
 .project {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -423,8 +423,21 @@ main {
 }
 
 .project-video {
-    width: 70rem;
+    width: 50rem;
+    height: 50rem;
     border: 0.3rem solid aqua;   
+    object-fit: cover;
+    
+}
+
+.project-text {
+    display: flex;
+    width: 50rem;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .project h2 {
@@ -435,7 +448,8 @@ main {
 .project p {
     font-size: 1.5rem;
     color: white;
-    width: 80rem;
+    width: 50rem;
+    text-align: justify;
 }
 
 .project-icons{
