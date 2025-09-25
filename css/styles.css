@@ -104,7 +104,7 @@ body {
 
 .wrapper {
   width:100vw;
-  height:500vh;
+  height:400vh;
 }
 
 header {
@@ -278,6 +278,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 3.5rem;
     height: 3.5rem;
     background-color: transparent;
@@ -298,6 +299,7 @@ main {
     border: 0.2rem solid white;
     transition: ease 0.2s;
     box-shadow: 0 0 0.5rem;
+    
 }
 
 .typing-text span {
@@ -349,7 +351,6 @@ main {
 
 .projects{
     width: 100vw;
-    min-height: 70rem;
     height: 100vh;
     background-color: #333333;
     display: flex;
@@ -420,11 +421,12 @@ main {
     border: 0.2rem solid white;
     transition: ease 0.2s;
     box-shadow: 0 0 0.5rem;
+    cursor: pointer;
 }
 
 .project-video {
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     border: 0.3rem solid aqua;   
     object-fit: cover;
     
@@ -432,23 +434,34 @@ main {
 
 .project-text {
     display: flex;
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 3rem;
 }
 
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    width: 100%;
+}
+
 .project h2 {
     font-size: 3rem;
+    padding:1rem;
     color:white;
 }
 
 .project p {
     font-size: 1.5rem;
     color: white;
-    width: 50rem;
+    width: 45rem;
+    padding: 2.5rem;
+    background-color: #222222;
     text-align: justify;
 }
 
@@ -456,20 +469,38 @@ main {
     padding-top:1rem ;
     transition: ease 0.5s;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project-icons a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 10rem;
+    height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid aqua;
+    border: 0.2rem solid white;
     font-size: 2rem;
-    border-radius: 50%;
-    color:aqua;
+    background-color: #222222;
+    color:white;
+}
+
+.project-info 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    gap:3rem;
+    color: white;
+    background-color: #222222;
+}
+
+.project-info i {
+    font-size: 1;
 }
 
 .project-icons a:hover{
@@ -485,6 +516,30 @@ main {
     transition: ease 0.2s;
 }
 
+@media(orientation: portrait)
+{
+    .projects {
+        min-height: 120rem;
+    }
+    .project {
+        flex-direction: column;
+        gap: 7rem;
+    }
+    
+    .project p {
+        width: 35rem;
+    }
+    
+    .project-text {
+        width: 35rem;
+    }
+    
+    .project-video {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
 .contact{
     width: 100vw;
     height: 80vh;
@@ -494,7 +549,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:5rem;
+    gap:2rem;
 }
 
 .contact h3 {
@@ -524,7 +579,7 @@ form {
 }
 
 .contact h1 {
-    font-size: 5rem ;   
+    font-size: 4rem ;   
     color: white;
 }
 
@@ -566,7 +621,7 @@ footer {
     width: 100vw;
     height: 20vh;
     min-height: 15rem;
-    background-color: #222222;
+    background-color: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
