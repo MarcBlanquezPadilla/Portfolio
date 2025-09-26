@@ -379,7 +379,6 @@ main {
     opacity: 0;
     visibility: hidden;
     transition: ease 0.3s;
-    transform: scale(0.9);
 }
 
 .project.active {
@@ -391,7 +390,7 @@ main {
 
 .project.hidden {
     
-    display: none;
+    opacity: 0;
 }
 
 .project-container {
