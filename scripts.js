@@ -58,7 +58,18 @@ const projects = [
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts"
+  },
+  {
+    title: "Pac-man",
+    videoSrc: "resources/Pac-Man.mp4",
+    description: "VVVVVV is a retro-style 2D platformer recreated as a personal project. Just like the original, it focuses on gravity-flipping mechanics instead of traditional jumping, challenging players to navigate tricky levels filled with spikes, hazards, and precise timing puzzles.",
+    teamSize: 2,
+    duration: "3 months",
+    tools: "Box2d & raylib (C++)",
+    githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
+    codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts"
   }
+
 ];
 
 const projectDisplay = document.getElementById("project-display");
