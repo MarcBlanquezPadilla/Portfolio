@@ -14,78 +14,73 @@
 html {
     scroll-behavior: smooth;
     letter-spacing: 0.2rem;
-}
-
-@media(orientation:landscape) {
-    
-    @media(max-width: 4000px) {
-        html {
-            font-size: 130%;
-        }
-    }
-
-    @media(max-width: 3000px) {
-        html {
-            font-size: 100%;
-        }
-    }
-
-    @media(max-width: 2500px) {
-        html {
-            font-size: 85%;
-        }
-    }
-
-    @media(max-width: 2000px) {
-        html {
-            font-size: 70%;
-        }
-    }
-
-    @media(max-width: 1500px) {
-        html {
-            font-size: 55%;
-        }
-    }
-
-    @media(max-width: 1000px) {
-        html {
-            font-size: 40%;
-        }
-    }
-
-    @media(max-width: 750px) {
-        html {
-            font-size: 30%;
-        }
-    }
+    -webkit-font-smoothing: antialiased;
 }
 
 
-@media(orientation:portrait) {
-    
-    @media(max-width: 2000px) {
-        html {
-            font-size: 90%;
-        }
+@media (orientation: landscape) and (max-width: 4000px) {
+    html {
+        font-size: 130%;
     }
+}
 
-    @media(max-width: 1500px) {
-        html {
-            font-size: 75%;
-        }
+@media (orientation: landscape) and (max-width: 3000px) {
+    html {
+        font-size: 100%;
     }
+}
 
-    @media(max-width: 1000px) {
-        html {
-            font-size: 60%;
-        }
+@media (orientation: landscape) and (max-width: 2500px) {
+    html {
+        font-size: 85%;
     }
+}
 
-    @media(max-width: 750px) {
-        html {
-            font-size: 40%;
-        }
+@media (orientation: landscape) and (max-width: 2000px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1500px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 750px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 2000px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1500px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1000px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 750px) {
+    html {
+        font-size: 40%;
     }
 }
 
