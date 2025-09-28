@@ -68,8 +68,17 @@ const projects = [
     tools: "Box2d & raylib (C++)",
     githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts"
+  },
+  {
+    title: "Racing-Game",
+    videoSrc: "resources/Racing-Game.mp4",
+    description: "VVVVVV is a retro-style 2D platformer recreated as a personal project. Just like the original, it focuses on gravity-flipping mechanics instead of traditional jumping, challenging players to navigate tricky levels filled with spikes, hazards, and precise timing puzzles.",
+    teamSize: 2,
+    duration: "3 months",
+    tools: "Box2d & raylib (C++)",
+    githubLink: "https://github.com/algars15/Racing-game/releases/tag/v1.0",
+    codeLink: "https://github.com/algars15/Racing-game/tree/main/Racing-game/Source"
   }
-
 ];
 
 const projectDisplay = document.getElementById("project-display");
