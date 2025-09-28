@@ -423,7 +423,10 @@ main {
     height: 45rem;
     border: 0.3rem solid aqua;   
     object-fit: cover;
-    
+}
+
+.project-video:fullscreen {
+    object-fit: contain;
 }
 
 .project-text {
