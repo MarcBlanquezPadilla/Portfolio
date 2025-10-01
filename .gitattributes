@@ -1,5 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-background.mp4 filter=lfs diff=lfs merge=lfs -text
-Background.mp4 filter=lfs diff=lfs merge=lfs -text
+resources/Background.mp4
+git[[:space:]]lfs[[:space:]]track[[:space:]]*.mp4
+git[[:space:]]rm[[:space:]]Background.mp4
+git[[:space:]]rm[[:space:]]--cached[[:space:]]resources/CityRun.mp4
+git[[:space:]]lfs[[:space:]]track[[:space:]]resources/Background.mp4 filter=lfs diff=lfs merge=lfs -text
