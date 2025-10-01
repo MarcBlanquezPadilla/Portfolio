@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "Spooky's Candy Quest",
-    videoSrc: "resources/KimsUnderworld.mp4",
+    videoSrc: "resources/Spookys.mp4",
     description: "Spooky's Candy Quest is a brief Halloween-themed platformer where you're a little ghost that goes trick or treating, while avoiding the dangers of the world around them. Transform back and forth between a ghost to move around, and a pumpkin to attack.",
     teamSize: 2,
     duration: "3 months",
