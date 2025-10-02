@@ -2,7 +2,7 @@ const projects = [
   {
     title: "VOXLAND",
     videoSrc: "resources/Voxland.mp4",
-    description: "VOXLAND is a graphic adventure and point & click game in which our protagonist becomes stranded on an island after losing control of their boat and crashing against the shore, leaving it wrecked. Once on the island, we can gather resources either by picking them up from the ground or by using tools. We will also encounter other characters who live on the island, and they will help us in our adventure to repair the boat and escape the island.",
+    description: "Voxland is a charming 3D adventure game that combines exploration, crafting, and puzzles within a stylized voxel world. After being shipwrecked, the player's goal is to repair their boat to escape the island by gathering resources and making tools through an intuitive crafting system. Progression is driven by interacting with charismatic NPCs who offer quests and challenges that test the player's logic and memory. <br><br>Fully developed by a team of two, this project cohesively integrates dialogue, inventory, quests, and varied puzzle systems, creating a rewarding gameplay experience.",
     teamSize: 2,
     duration: "3 months",
     tools: "Unity (C++)",
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "NIX - The Eternal Night",
     videoSrc: "resources/NixTheEternalNight.mp4",
-    description: "NIX is a third-person shooter with a survival horror aesthetic. The game tells a linear story while allowing freedom to explore different levels. Players will face terrifying enemies and eerie environments, experiencing suspense and fear while also having the chance to fight back using limited powers and weapons. A key feature of the game is the presence of a companion, Brownie, who helps solve puzzles, traverse the map more easily, and attack enemies. Each enemy type is linked to a specific element, requiring players to carefully choose their strategies and abilities in combat.",
+    description: "Ambientado en un futuro postapocalíptico, NIX - The Eternal Night es un shooter de terror en tercera persona que arrastra al jugador a un opresivo mundo subterráneo. La jugabilidad combina exploración de instalaciones industriales, puzles y tensos combates contra criaturas. Una mecánica central es la fusión con una criatura para desbloquear habilidades. El jugador debe gestionar recursos como munición y jeringas de vida para sobrevivir a los enfrentamientos, haciendo uso tanto del sigilo como del combate directo. <br><br>Este proyecto fue desarrollado desde cero por un equipo de 7 personas, compuesto por 4 programadores y 3 artistas.",
     teamSize: 7,
     duration: "3 months",
     tools: "Unity (C#)",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Kim's Underorld",
     videoSrc: "resources/KimsUnderworld.mp4",
-    description: "Kim’s Underworld is a 2D pixel art Metroidvania focused on combat, climbing, and narrative. The player embarks on a journey into the underworld to confront the death of a loved one, with the goal of sparking reflection and emotional resonance. Kim, the protagonist, must use her climbing tools and skills — such as her ice axes — to traverse the different layers of the underworld, defeat enemies and bosses, and acquire new abilities for her soul. This emotional journey is structured around the five stages of grief, which Kim must face and overcome in order to finally accept the death of her father.",
+    description: "Kim's Underworld is a 2D Metroidvania platformer with a detailed pixel art aesthetic. The story follows Kim, a young climber who descends into the underworld to find her lost father. The game focuses on exploring a cavernous world, using a unique pickaxe climbing mechanic to navigate its challenging levels. Throughout her journey, Kim will confront creatures and bosses while uncovering an emotional narrative about loss and overcoming the different stages of grief. <br><br>This project was developed by a team of 17 people (7 programmers and 10 artists), where I held the role of Lead Programmer.",
     teamSize: 8,
     duration: "4 months",
     tools: "SDL 2 & raylib(C++), XML",
@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Spooky's Candy Quest",
     videoSrc: "resources/Spookys.mp4",
-    description: "Spooky's Candy Quest is a brief Halloween-themed platformer where you're a little ghost that goes trick or treating, while avoiding the dangers of the world around them. Transform back and forth between a ghost to move around, and a pumpkin to attack.",
+    description: "Spooky's Candy Quest is a fast-paced 2D platformer with a charming Halloween pixel art aesthetic. The objective is to guide a character through challenging levels to collect all the candies in each stage, while facing themed enemies. Gameplay centers on a strategic transformation mechanic: the ghost form prioritizes agility, while the pumpkin form grants attacking capabilities at the cost of reduced mobility, forcing players to switch between forms. <br><br>The programming for this project was handled by a team of two, using art assets from online libraries to focus on gameplay development.",
     teamSize: 2,
     duration: "3 months",
     tools: "SDL 2 & raylib(C++), XML",
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "CityRun",
     videoSrc: "resources/CityRun.mp4",
-    description: "City Run is a fast-paced runner game inspired by the style of Subway Surfers, but structured by levels. Players race through a bustling city, dodging obstacles such as pedestrians, cars, and other urban hazards. Each level brings new challenges, tighter spaces, and increasing speed, pushing the player’s reflexes and timing to the limit as they progress through the city streets.",
+    description: "City Run is a dynamic 3D runner game with a vibrant low-poly aesthetic. The main objective is to reach the end of the course with the highest number of followers possible. The player controls the lead runner, who must recruit pedestrians to create a massive following crowd. Gameplay focuses on maneuvering this growing group through chaotic streets, dodging obstacles like police cars, barriers, and hydrants. Losing followers penalizes the score, so the challenge is to protect the crowd while jumping over vehicles to maintain momentum. <br><br>This project was programmed entirely by me, using assets from online libraries.",
     teamSize: 1,
     duration: "3 months",
     tools: "Unity (C#)",
@@ -52,7 +52,7 @@ const projects = [
   {
     title: "VVVVVV",
     videoSrc: "resources/VVVVVV.mp4",
-    description: "VVVVVV is a retro-style 2D platformer recreated as a personal project. Just like the original, it focuses on gravity-flipping mechanics instead of traditional jumping, challenging players to navigate tricky levels filled with spikes, hazards, and precise timing puzzles.",
+    description: "This project is a recreation of the acclaimed puzzle-platformer 'VVVVVV', focused on faithfully replicating its gameplay. The core mechanic is gravity inversion: instead of jumping, the player flips between the floor and ceiling to navigate mazes that demand quick reflexes and precision. The goal is to clear each room by dodging spikes and reaching the exit, cloning the frantic pace and difficulty of the original title. The experience constantly tests the player's skills, requiring a complete mastery of its unique movement mechanic. <br><br>The project was programmed entirely by me, using the original game's assets.",
     teamSize: 1,
     duration: "3 months",
     tools: "Unity (C#)",
@@ -62,7 +62,7 @@ const projects = [
   {
     title: "Pac-man",
     videoSrc: "resources/Pac-Man.mp4",
-    description: "VVVVVV is a retro-style 2D platformer recreated as a personal project. Just like the original, it focuses on gravity-flipping mechanics instead of traditional jumping, challenging players to navigate tricky levels filled with spikes, hazards, and precise timing puzzles.",
+    description: "This project is a tribute to and a faithful recreation of the iconic arcade classic, Pac-Man. The objective is to guide the character through the maze, eating all the dots while avoiding capture by four ghosts. The gameplay replicates original mechanics, including the Power Pellets that allow the player to temporarily hunt the enemies. Special attention was given to recreating each ghost's unique AI and the scoring system, offering an authentic and nostalgic experience that tests the player's reflexes. <br><br>This project was programmed entirely by me, using art assets from online libraries.",
     teamSize: 2,
     duration: "3 months",
     tools: "Box2d & raylib (C++)",
@@ -72,7 +72,7 @@ const projects = [
   {
     title: "Racing-Game",
     videoSrc: "resources/Racing-Game.mp4",
-    description: "VVVVVV is a retro-style 2D platformer recreated as a personal project. Just like the original, it focuses on gravity-flipping mechanics instead of traditional jumping, challenging players to navigate tricky levels filled with spikes, hazards, and precise timing puzzles.",
+    description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
     teamSize: 2,
     duration: "3 months",
     tools: "Box2d & raylib (C++)",
