@@ -86,38 +86,36 @@ let currentProjectIndex = 0;
 
 function renderProject(index) {
     const project = projects[index];
+    const isFirstLoad = !projectDisplay.classList.contains('active');
 
-    if (projectDisplay.classList.contains('active'))
-    {
+    if (!isFirstLoad) {
         projectDisplay.classList.remove('active');
-        projectDisplay.classList.add('hidden');
     }
-    
 
     setTimeout(() => {
+        
         projectDisplay.innerHTML = `
-        <video class="project-video" loop autoplay muted controls>
-            <source src="${project.videoSrc}" type="video/mp4">
-        </video>
-        <div class="project-text">
-            <div class="project-title"><h2>${project.title}</h2></div>
-            <div class="project-text-container"><p>${project.description}</p></div>
-            <div class="project-info">
-            <i class="fa-solid fa-users"> ${project.teamSize}</i>
-            <i class="fa-solid fa-clock"> ${project.duration}</i>
-            <i class="fa-solid fa-screwdriver-wrench"> ${project.tools}</i>
+            <video class="project-video" loop autoplay muted controls poster="resources/posters/${project.title.replace(/\s+/g, '')}.jpg">
+                <source src="${project.videoSrc}" type="video/mp4">
+            </video>
+            <div class="project-text">
+                <div class="project-title"><h2>${project.title}</h2></div>
+                <div class="project-text-container"><p>${project.description}</p></div>
+                <div class="project-info">
+                    <i class="fa-solid fa-users"> ${project.teamSize}</i>
+                    <i class="fa-solid fa-clock"> ${project.duration}</i>
+                    <i class="fa-solid fa-screwdriver-wrench"> ${project.tools}</i>
+                </div>
+                <div class="project-icons">
+                    <a href="${project.githubLink}" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="${project.codeLink}" target="_blank"><i class="fa fa-code"></i></a>
+                </div>
             </div>
-            <div class="project-icons">
-            <a href="${project.githubLink}" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="${project.codeLink}" target="_blank"><i class="fa fa-code"></i></a>
-            </div>
-        </div>
         `;
         
-        projectDisplay.classList.remove('hidden');
         projectDisplay.classList.add('active');
 
-    }, projectDisplay.classList.contains('active') ? 300 : 0);
+    }, isFirstLoad ? 0 : 300);
 }
 
 renderProject(0);
