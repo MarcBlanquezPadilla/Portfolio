@@ -1,7 +1,8 @@
 const projects = [
   {
     title: "VOXLAND",
-    videoSrc: "resources/Voxland.mp4",
+    videoSrc: "resources/videos/Voxland.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "Voxland is a charming 3D adventure game that combines exploration, crafting, and puzzles within a stylized voxel world. After being shipwrecked, the player's goal is to repair their boat to escape the island by gathering resources and making tools through an intuitive crafting system. Progression is driven by interacting with charismatic NPCs who offer quests and challenges that test the player's logic and memory. <br><br>Fully developed by a team of two, this project cohesively integrates dialogue, inventory, quests, and varied puzzle systems, creating a rewarding gameplay experience.",
     teamSize: 2,
     duration: "3 months",
@@ -11,7 +12,8 @@ const projects = [
   },
   {
     title: "NIX - The Eternal Night",
-    videoSrc: "resources/NixTheEternalNight.mp4",
+    videoSrc: "resources/videos/NixTheEternalNight.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "Ambientado en un futuro postapocalíptico, NIX - The Eternal Night es un shooter de terror en tercera persona que arrastra al jugador a un opresivo mundo subterráneo. La jugabilidad combina exploración de instalaciones industriales, puzles y tensos combates contra criaturas. Una mecánica central es la fusión con una criatura para desbloquear habilidades. El jugador debe gestionar recursos como munición y jeringas de vida para sobrevivir a los enfrentamientos, haciendo uso tanto del sigilo como del combate directo. <br><br>Este proyecto fue desarrollado desde cero por un equipo de 7 personas, compuesto por 4 programadores y 3 artistas.",
     teamSize: 7,
     duration: "3 months",
@@ -20,8 +22,9 @@ const projects = [
     codeLink: "https://github.com/MarcBlanquezPadilla/NIX-TheEternalNight/tree/main/Assets/Scripts"
   },
   {
-    title: "Kim's Underorld",
-    videoSrc: "resources/KimsUnderworld.mp4",
+    title: "Kim's Underworld",
+    videoSrc: "resources/videos/KimsUnderworld.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "Kim's Underworld is a 2D Metroidvania platformer with a detailed pixel art aesthetic. The story follows Kim, a young climber who descends into the underworld to find her lost father. The game focuses on exploring a cavernous world, using a unique pickaxe climbing mechanic to navigate its challenging levels. Throughout her journey, Kim will confront creatures and bosses while uncovering an emotional narrative about loss and overcoming the different stages of grief. <br><br>This project was developed by a team of 17 people (7 programmers and 10 artists), where I held the role of Lead Programmer.",
     teamSize: 8,
     duration: "4 months",
@@ -31,7 +34,8 @@ const projects = [
   },
   {
     title: "Spooky's Candy Quest",
-    videoSrc: "resources/Spookys.mp4",
+    videoSrc: "resources/videos/Spookys.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "Spooky's Candy Quest is a fast-paced 2D platformer with a charming Halloween pixel art aesthetic. The objective is to guide a character through challenging levels to collect all the candies in each stage, while facing themed enemies. Gameplay centers on a strategic transformation mechanic: the ghost form prioritizes agility, while the pumpkin form grants attacking capabilities at the cost of reduced mobility, forcing players to switch between forms. <br><br>The programming for this project was handled by a team of two, using art assets from online libraries to focus on gameplay development.",
     teamSize: 2,
     duration: "3 months",
@@ -41,7 +45,8 @@ const projects = [
   },
   {
     title: "CityRun",
-    videoSrc: "resources/CityRun.mp4",
+    videoSrc: "resources/videos/CityRun.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "City Run is a dynamic 3D runner game with a vibrant low-poly aesthetic. The main objective is to reach the end of the course with the highest number of followers possible. The player controls the lead runner, who must recruit pedestrians to create a massive following crowd. Gameplay focuses on maneuvering this growing group through chaotic streets, dodging obstacles like police cars, barriers, and hydrants. Losing followers penalizes the score, so the challenge is to protect the crowd while jumping over vehicles to maintain momentum. <br><br>This project was programmed entirely by me, using assets from online libraries.",
     teamSize: 1,
     duration: "3 months",
@@ -51,7 +56,8 @@ const projects = [
   },
   {
     title: "VVVVVV",
-    videoSrc: "resources/VVVVVV.mp4",
+    videoSrc: "resources/videos/VVVVVV.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "This project is a recreation of the acclaimed puzzle-platformer 'VVVVVV', focused on faithfully replicating its gameplay. The core mechanic is gravity inversion: instead of jumping, the player flips between the floor and ceiling to navigate mazes that demand quick reflexes and precision. The goal is to clear each room by dodging spikes and reaching the exit, cloning the frantic pace and difficulty of the original title. The experience constantly tests the player's skills, requiring a complete mastery of its unique movement mechanic. <br><br>The project was programmed entirely by me, using the original game's assets.",
     teamSize: 1,
     duration: "3 months",
@@ -61,7 +67,8 @@ const projects = [
   },
   {
     title: "Pac-man",
-    videoSrc: "resources/Pac-Man.mp4",
+    videoSrc: "resources/videos/Pac-Man.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "This project is a tribute to and a faithful recreation of the iconic arcade classic, Pac-Man. The objective is to guide the character through the maze, eating all the dots while avoiding capture by four ghosts. The gameplay replicates original mechanics, including the Power Pellets that allow the player to temporarily hunt the enemies. Special attention was given to recreating each ghost's unique AI and the scoring system, offering an authentic and nostalgic experience that tests the player's reflexes. <br><br>This project was programmed entirely by me, using art assets from online libraries.",
     teamSize: 2,
     duration: "3 months",
@@ -71,7 +78,8 @@ const projects = [
   },
   {
     title: "Racing-Game",
-    videoSrc: "resources/Racing-Game.mp4",
+    videoSrc: "resources/videos/Racing-Game.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
     description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
     teamSize: 2,
     duration: "3 months",
@@ -81,56 +89,74 @@ const projects = [
   }
 ];
 
-const projectDisplay = document.getElementById("project-display");
-let currentProjectIndex = 0;
+const projectsGrid = document.getElementById("projects-grid");
+const loadMoreBtn = document.getElementById("load-more-btn");
 
-function renderProject(index) {
-    const project = projects[index];
-    const isFirstLoad = !projectDisplay.classList.contains('active');
+let visibleProjects = 6; 
 
-    if (!isFirstLoad) {
-        projectDisplay.classList.remove('active');
-    }
-
-    setTimeout(() => {
-        
-        projectDisplay.innerHTML = `
-            <video class="project-video" loop autoplay muted controls poster="resources/posters/${project.title.replace(/\s+/g, '')}.jpg">
-                <source src="${project.videoSrc}" type="video/mp4">
-            </video>
-            <div class="project-text">
-                <div class="project-title"><h2>${project.title}</h2></div>
-                <div class="project-text-container"><p>${project.description}</p></div>
-                <div class="project-info">
-                    <i class="fa-solid fa-users"> ${project.teamSize}</i>
-                    <i class="fa-solid fa-clock"> ${project.duration}</i>
-                    <i class="fa-solid fa-screwdriver-wrench"> ${project.tools}</i>
+function renderProjects() {
+    let htmlContent = "";
+    
+    const projectsToShow = projects.slice(0, visibleProjects);
+    
+    projectsToShow.forEach((project, index) => {
+        htmlContent += `
+            <div class="project-card" 
+                 onclick="openProject(${index})"
+                 onmouseenter="playVideo(this)" 
+                 onmouseleave="pauseVideo(this)">
+                
+                <!-- NUEVO CONTENEDOR DE MEDIOS -->
+                <div class="media-container">
+                    <img src="${project.posterSrc}" class="card-poster" alt="${project.title}">
+                    <video class="project-card-video" muted loop playsinline>
+                        <source src="${project.videoSrc}" type="video/mp4">
+                    </video>
                 </div>
-                <div class="project-icons">
-                    <a href="${project.githubLink}" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="${project.codeLink}" target="_blank"><i class="fa fa-code"></i></a>
+                
+                <div class="project-card-info">
+                    <h3>${project.title}</h3>
+                    <p><i class="fa-solid fa-screwdriver-wrench"></i> ${project.tools}</p>
                 </div>
             </div>
         `;
-        
-        projectDisplay.classList.add('active');
+    });
+    
+    projectsGrid.innerHTML = htmlContent;
 
-    }, isFirstLoad ? 0 : 300);
+    if (visibleProjects >= projects.length) {
+        loadMoreBtn.style.display = 'none';
+    }
 }
 
-renderProject(0);
+function playVideo(cardElement) {
+    const video = cardElement.querySelector('video');
+    const poster = cardElement.querySelector('.card-poster');
+    
+    if (video && poster) {
+        poster.style.opacity = '0';
+        video.play().catch(() => console.log("Carga cancelada"));
+    }
+}
 
-const leftArrow = document.querySelector('.project-left-arrow');
-const rightArrow = document.querySelector('.project-right-arrow');
+function pauseVideo(cardElement) {
+    const video = cardElement.querySelector('video');
+    const poster = cardElement.querySelector('.card-poster');
+    
+    if (video && poster) {
+        video.pause();
+        poster.style.opacity = '1';
+    }
+}
 
-leftArrow.addEventListener('click', () => {
-    currentProjectIndex = (currentProjectIndex - 1 + projects.length) % projects.length;
-    renderProject(currentProjectIndex);
+loadMoreBtn.addEventListener("click", () => {
+    visibleProjects += visibleProjects;
+    renderProjects();
 });
 
-rightArrow.addEventListener('click', () => {
-    currentProjectIndex = (currentProjectIndex + 1) % projects.length;
-    renderProject(currentProjectIndex);
-});
+renderProjects();
 
-renderProject(currentProjectIndex);
+function openProject(index) {
+    console.log("Clic en el proyecto:", projects[index].title);
+    alert("Próximamente: Aquí cargaremos la página del proyecto " + projects[index].title);
+}

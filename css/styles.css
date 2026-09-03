@@ -17,7 +17,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-
 @media (orientation: landscape) and (max-width: 4000px) {
     html {
         font-size: 130%;
@@ -107,7 +106,7 @@ header {
     width:100%;
     min-height: 6rem;
     background-color: #333333;
-    z-index: 2;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,16 +343,17 @@ main {
     }
 }
 
-.projects{
+.projects {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; 
+    height: auto; 
     background-color: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 7rem;
-
+    gap: 4rem;
+    padding: 10rem 0;
 }
 
 .projects h1 {
@@ -376,165 +376,115 @@ main {
     transition: ease 0.3s;
 }
 
-.project.active {
-
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+    width: 80vw;
+    max-width: 120rem;
+    padding: 2rem 0;
 }
 
-.project.hidden {
-    
-    opacity: 0;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.project-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: transparent;
-    border: 0.2rem solid aqua;
-    font-size: 2rem;
-    border-radius: 50%;
-    color:aqua;
-}
-
-.project-arrow:hover{
-    transform: scale(1.1);
-    color: white;
-    border: 0.2rem solid white;
-    transition: ease 0.2s;
-    box-shadow: 0 0 0.5rem;
+.project-card {
+    background-color: #222222;
+    border: 0.3rem solid aqua;
+    border-radius: 1rem;
+    overflow: hidden;
     cursor: pointer;
-}
-
-.project-video {
-    width: 45rem;
-    height: 45rem;
-    border: 0.3rem solid aqua;   
-    object-fit: cover;
-}
-
-.project-video:fullscreen {
-    object-fit: contain;
-}
-
-.project-text {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     display: flex;
-    width: 45rem;
-    height: 45rem;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 3rem;
 }
 
-.project-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #222222;
+.project-card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1rem 2rem rgba(0, 255, 255, 0.2);
+    border-color: white;
+}
+
+.media-container {
+    position: relative;
     width: 100%;
+    height: 18rem;
+    border-bottom: 0.3rem solid aqua;
+    transition: border-color 0.3s ease;
 }
 
-.project h2 {
-    font-size: 3rem;
-    padding:1rem;
-    color:white;
+.project-card:hover .media-container {
+    border-bottom: 0.3rem solid white;
 }
 
-.project p {
-    font-size: 1.5rem;
-    color: white;
-    width: 45rem;
-    padding: 2.5rem;
-    background-color: #222222;
-    text-align: justify;
-}
-
-.project-icons{
-    padding-top:1rem ;
-    transition: ease 0.5s;
-    display: flex;
-    gap: 2rem;
-}
-
-.project-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid white;
-    font-size: 2rem;
-    background-color: #222222;
-    color:white;
-}
-
-.project-info 
-{
+.card-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-card-video {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-bottom: 0.3rem solid aqua;
+    transition: border-color 0.3s ease;
+}
+
+
+.project-card:hover .project-card-video {
+    border-bottom: 0.3rem solid white;
+}
+
+.project-card-img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-bottom: 0.3rem solid aqua;
+    transition: border-color 0.3s ease;
+}
+
+.project-card:hover .project-card-img {
+    border-bottom: 0.3rem solid white;
+}
+
+.project-card-info {
+    padding: 2rem;
     text-align: center;
-    justify-content: center;
-    padding: 1rem;
-    gap:3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card-info h3 {
     color: white;
-    background-color: #222222;
+    font-size: 3rem;
 }
 
-.project-info i {
-    font-size: 1;
+.project-card-info p {
+    color: aqua;
+    font-size: 2rem;
 }
 
-.project-icons a:hover{
+.load-more-btn {
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    border: 0.4rem solid aqua;
+    background-color: transparent;
+    color: aqua;
+    border-radius: 1rem;
+    transition: ease 0.3s;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.load-more-btn:hover {
     transform: scale(1.1);
     color: white;
-    border: 0.2rem solid white;
-    transition: ease 0.2s;
-    box-shadow: 0 0 0.5rem;
-}
-
-.project-icons a p:hover{
-    color: white;
-    transition: ease 0.2s;
-}
-
-@media(orientation: portrait)
-{
-    .projects {
-        min-height: 120rem;
-    }
-    .project {
-        flex-direction: column;
-        gap: 7rem;
-    }
-    
-    .project p {
-        width: 35rem;
-    }
-    
-    .project-text {
-        width: 35rem;
-    }
-    
-    .project-video {
-        width: 35rem;
-        height: 35rem;
-    }
+    border: 0.4rem solid white;
+    box-shadow: 0 0 1.5rem rgba(0, 255, 255, 0.4);
 }
 
 .contact{
