@@ -165,6 +165,13 @@ header {
     }
 }
 
+.menu a:hover, 
+.menu a:active,
+.menu a.active-link {
+    background-color: rgba(0, 255, 255, 0.2);
+    transition: ease .2s;
+    border-bottom: 0.2rem solid aqua;
+}
 
 main {
     width: 100vw;
