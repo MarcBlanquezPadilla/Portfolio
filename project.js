@@ -1,39 +1,48 @@
-// 1. Leer el ID que viene en la URL (ej: project.html?id=3)
 const urlParams = new URLSearchParams(window.location.search);
 const projectId = urlParams.get('id');
 
-// 2. Comprobar que el ID existe y es válido
 if (projectId !== null && projects[projectId]) {
     
-    // Obtenemos el proyecto exacto
     const project = projects[projectId];
     const container = document.getElementById('single-project-container');
 
-    // 3. Dibujamos el diseño detallado (muy parecido a tu carrusel original)
+    // 3. Dibujamos el DISEÑO VERTICAL (Vídeo arriba, información abajo)
     container.innerHTML = `
-        <div style="display: flex; flex-direction: row; gap: 4rem; align-items: flex-start; flex-wrap: wrap;">
+        <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center; padding-bottom: 5rem;">
             
-            <div style="flex: 1; min-width: 30rem;">
-                <video style="width: 100%; border: 0.3rem solid aqua; border-radius: 1rem;" loop autoplay muted controls playsinline poster="${project.posterSrc}">
+            <!-- PARTE SUPERIOR: EL VÍDEO GIGANTE -->
+            <div style="width: 100%; max-width: 95rem;">
+                <video style="width: 100%; border: 0.3rem solid aqua; border-radius: 1rem; box-shadow: 0 1rem 3rem rgba(0, 255, 255, 0.1);" loop autoplay muted controls playsinline poster="${project.posterSrc}">
                     <source src="${project.videoSrc}" type="video/mp4">
                 </video>
             </div>
 
-            <div style="flex: 1; min-width: 30rem; display: flex; flex-direction: column; gap: 2rem;">
-                <h1 style="font-size: 5rem; color: aqua;">${project.title}</h1>
-                <p style="font-size: 2rem; text-align: justify; line-height: 1.5;">${project.description}</p>
+            <!-- PARTE INFERIOR: TODA LA INFORMACIÓN -->
+            <div style="width: 100%; max-width: 95rem; display: flex; flex-direction: column; gap: 3rem;">
                 
-                <div style="display: flex; gap: 3rem; font-size: 2rem; background-color: #333; padding: 1.5rem; border-radius: 1rem;">
+                <!-- Título centrado para impactar -->
+                <h1 style="font-size: 6rem; color: aqua; margin: 0; text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">
+                    ${project.title}
+                </h1>
+                
+                <!-- Píldoras de información centradas -->
+                <div style="display: flex; gap: 3rem; font-size: 2.2rem; background-color: #333; padding: 2rem; border-radius: 1rem; justify-content: center; flex-wrap: wrap;">
                     <span><i class="fa-solid fa-users" style="color:aqua;"></i> ${project.teamSize}</span>
                     <span><i class="fa-solid fa-clock" style="color:aqua;"></i> ${project.duration}</span>
                     <span><i class="fa-solid fa-screwdriver-wrench" style="color:aqua;"></i> ${project.tools}</span>
                 </div>
 
-                <div style="display: flex; gap: 2rem; margin-top: 2rem;">
-                    <a href="${project.githubLink}" target="_blank" style="padding: 1rem 3rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                <!-- Descripción del proyecto -->
+                <p style="font-size: 2.5rem; text-align: justify; line-height: 1.6; color: #ddd;">
+                    ${project.description}
+                </p>
+                
+                <!-- Botones centrados abajo del todo -->
+                <div style="display: flex; gap: 2rem; margin-top: 2rem; justify-content: center;">
+                    <a href="${project.githubLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="${project.codeLink}" target="_blank" style="padding: 1rem 3rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                    <a href="${project.codeLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
                         <i class="fa fa-code"></i> Code
                     </a>
                 </div>
@@ -42,11 +51,9 @@ if (projectId !== null && projects[projectId]) {
         </div>
     `;
 
-    // Cambiamos el título de la pestaña del navegador
     document.title = `${project.title} - Portfolio`;
 
 } else {
-    // Si alguien entra sin ID o pone un ID falso, le avisamos
     document.getElementById('single-project-container').innerHTML = `
         <h1 style="font-size: 5rem; color: aqua; text-align: center;">Project not found :(</h1>
         <div style="text-align: center; margin-top: 2rem;">
