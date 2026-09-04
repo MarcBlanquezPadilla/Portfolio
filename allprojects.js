@@ -1,48 +1,12 @@
-const sections = document.querySelectorAll('main > div');
-const navLinks = document.querySelectorAll('.menu a');
-const projectsToShow = [1,5,6]
-
-const observerOptions = {
-    root: null,
-    rootMargin: '-100px 0px -100px 0px', 
-    threshold: 0.3 
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-
-            navLinks.forEach(link => link.classList.remove('active-link'));
-            
-            const activeId = entry.target.getAttribute('id');
-            
-            const activeLink = document.querySelector(`.menu a[href="#${activeId}"]`);
-            
-            if (activeLink) {
-                activeLink.classList.add('active-link');
-            }
-        }
-    });
-}, observerOptions);
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-
 const projectsGrid = document.getElementById("projects-grid");
-const allProjectsBtn = document.getElementById("all-projects-btn");
 
-function renderProjects() {
+function renderAllProjects() {
     let htmlContent = "";
     
-    projectsToShow.forEach((projectId) => {
-        
-        const project = projects[projectId];
-
+    projects.forEach((project, index) => {
         htmlContent += `
             <div class="project-card" 
-                 onclick="openProject(${projectId})" 
+                 onclick="openProject(${index})"
                  onmouseenter="playVideo(this)" 
                  onmouseleave="pauseVideo(this)">
                 
@@ -84,10 +48,10 @@ function pauseVideo(cardElement) {
     }
 }
 
-allProjectsBtn.addEventListener("click", () => {
-    
-    window.location.href = `allprojects.html`;
-});
+// Al hacer clic, nos lleva a la página individual
+function openProject(index) {
+    window.location.href = `project.html?id=${index}`;
+}
 
-renderProjects();
-
+// ¡Lanzamos la función al cargar la página!
+renderAllProjects();
