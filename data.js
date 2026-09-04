@@ -9,7 +9,7 @@ const projects = [
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/Voxland/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/Voxland/tree/v.0.1.0/Assets/Scripts",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "NIX - The Eternal Night",
@@ -21,7 +21,7 @@ const projects = [
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/NIX-TheEternalNight/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/NIX-TheEternalNight/tree/main/Assets/Scripts",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "Kim's Underworld",
@@ -33,7 +33,7 @@ const projects = [
     tools: "SDL 2 & raylib(C++), XML",
     githubLink: "https://github.com/XaviFast05/Kims-Underworld/releases/tag/GOLD",
     codeLink: "https://github.com/XaviFast05/Kims-Underworld/tree/main/Juegos_de_desarrollo/Marc/src",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "Spooky's Candy Quest",
@@ -45,7 +45,7 @@ const projects = [
     tools: "SDL 2 & raylib(C++), XML",
     githubLink: "https://github.com/MarcBlanquezPadilla/PlatformGame/releases/tag/v.0.3.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/PlatformGame/tree/main/src",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "CityRun",
@@ -57,7 +57,7 @@ const projects = [
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/CityRun/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/CityRun/tree/main/Assets/Scripts",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "VVVVVV",
@@ -69,7 +69,7 @@ const projects = [
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "Pac-man",
@@ -81,10 +81,34 @@ const projects = [
     tools: "Box2d & raylib (C++)",
     githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
     codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts",
-    projectType: 0
+    projectType: 1
   },
   {
     title: "Racing-Game",
+    videoSrc: "resources/videos/Racing-Game.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
+    description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
+    teamSize: 2,
+    duration: "3 months",
+    tools: "Box2d & raylib (C++)",
+    githubLink: "https://github.com/algars15/Racing-game/releases/tag/v1.0",
+    codeLink: "https://github.com/algars15/Racing-game/tree/main/Racing-game/Source",
+    projectType: 1
+  },
+  {
+    title: "W16 Engine",
+    videoSrc: "resources/videos/Racing-Game.mp4",
+    posterSrc: "resources/posters/quadricula.jpg",
+    description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
+    teamSize: 2,
+    duration: "3 months",
+    tools: "Box2d & raylib (C++)",
+    githubLink: "https://github.com/algars15/Racing-game/releases/tag/v1.0",
+    codeLink: "https://github.com/algars15/Racing-game/tree/main/Racing-game/Source",
+    projectType: 0
+  },
+  {
+    title: "Wave Engine",
     videoSrc: "resources/videos/Racing-Game.mp4",
     posterSrc: "resources/posters/quadricula.jpg",
     description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",

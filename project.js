@@ -6,26 +6,25 @@ if (projectId !== null && projects[projectId]) {
     const project = projects[projectId];
     const container = document.getElementById('single-project-container');
 
-    // 3. Dibujamos el DISEÑO VERTICAL (Vídeo arriba, información abajo)
     container.innerHTML = `
         <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center; padding-bottom: 5rem;">
             
-            <!-- PARTE SUPERIOR: EL VÍDEO GIGANTE -->
+            <div style="width: 100%; max-width: 95rem; display: flex; flex-direction: column; gap: 3rem;">
+                
+                <h1 style="font-size: 6rem; color: aqua; margin: 0; text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">
+                    ${project.title}
+                </h1>
+            </div>
+
             <div style="width: 100%; max-width: 95rem;">
                 <video style="width: 100%; border: 0.3rem solid aqua; border-radius: 1rem; box-shadow: 0 1rem 3rem rgba(0, 255, 255, 0.1);" loop autoplay muted controls playsinline poster="${project.posterSrc}">
                     <source src="${project.videoSrc}" type="video/mp4">
                 </video>
             </div>
 
-            <!-- PARTE INFERIOR: TODA LA INFORMACIÓN -->
+
             <div style="width: 100%; max-width: 95rem; display: flex; flex-direction: column; gap: 3rem;">
                 
-                <!-- Título centrado para impactar -->
-                <h1 style="font-size: 6rem; color: aqua; margin: 0; text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">
-                    ${project.title}
-                </h1>
-                
-                <!-- Píldoras de información centradas -->
                 <div style="display: flex; gap: 3rem; font-size: 2.2rem; background-color: #333; padding: 2rem; border-radius: 1rem; justify-content: center; flex-wrap: wrap;">
                     <span><i class="fa-solid fa-users" style="color:aqua;"></i> ${project.teamSize}</span>
                     <span><i class="fa-solid fa-clock" style="color:aqua;"></i> ${project.duration}</span>

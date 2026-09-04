@@ -100,7 +100,7 @@ main {
     width: 100vw;
 }
 
-.projects {
+.engine-projects {
     width: 100vw;
     min-height: 100vh; 
     height: auto; 
@@ -113,19 +113,51 @@ main {
     padding: 10rem 0;
 }
 
-.projects h1 {
+.engine-projects h1 {
     font-size: 5rem;
     color: white;
 }
 
-.projects h1 span {
+.engine-projects h1 span {
     color: aqua;
 }
 
 
-.projects-grid {
+.game-projects {
+    width: 100vw;
+    min-height: 100vh; 
+    height: auto; 
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 0;
+}
+
+.game-projects h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.game-projects h1 span {
+    color: aqua;
+}
+
+
+.game-projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 4rem;
+    width: 80vw;
+    max-width: 120rem;
+    padding: 2rem 0;
+}
+
+.engine-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
     gap: 4rem;
     width: 80vw;
     max-width: 120rem;
@@ -143,6 +175,19 @@ main {
     flex-direction: column;
 }
 
+.engine-projects-grid .media-container,
+.engine-projects-grid .project-card-video {
+    height: 32rem; 
+}
+
+.engine-projects-grid .project-card-info h3 {
+    font-size: 4rem;
+}
+
+.engine-projects-grid .project-card-info p {
+    font-size: 2.5rem;
+}
+
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0rem 0rem 5rem rgba(0, 255, 255, 0.4);
@@ -155,6 +200,19 @@ main {
     height: 20rem;
     border-bottom: 0.3rem solid aqua;
     transition: border-color 0.3s ease;
+}
+
+.engine-projects-grid .media-container,
+.engine-projects-grid .project-card-video {
+    height: 32rem; 
+}
+
+.engine-projects-grid .project-card-info h3 {
+    font-size: 4rem;
+}
+
+.engine-projects-grid .project-card-info p {
+    font-size: 2.5rem;
 }
 
 .project-card:hover .media-container {
