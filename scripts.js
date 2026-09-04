@@ -1,29 +1,22 @@
 const sections = document.querySelectorAll('main > div');
 const navLinks = document.querySelectorAll('.menu a');
 
-// 2. Configuramos nuestro "radar"
 const observerOptions = {
     root: null,
-    // El margen superior compensa la altura de tu header para que no detecte mal
     rootMargin: '-100px 0px -100px 0px', 
-    // Se activará cuando al menos el 30% de la sección sea visible
     threshold: 0.3 
 };
 
-// 3. Creamos la función que decide qué iluminar
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Quitamos la iluminación de todos los enlaces primero
+
             navLinks.forEach(link => link.classList.remove('active-link'));
             
-            // Cogemos el ID de la sección que está en pantalla (ej: "projects")
             const activeId = entry.target.getAttribute('id');
             
-            // Buscamos el enlace en el menú que tenga ese href (ej: "#projects")
             const activeLink = document.querySelector(`.menu a[href="#${activeId}"]`);
             
-            // Si existe, lo iluminamos
             if (activeLink) {
                 activeLink.classList.add('active-link');
             }
@@ -31,16 +24,15 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// 4. Le decimos al radar que empiece a vigilar cada sección
 sections.forEach(section => {
     observer.observe(section);
 });
 
 
 const projectsGrid = document.getElementById("projects-grid");
-const loadMoreBtn = document.getElementById("load-more-btn");
+const allProjectsBtn = document.getElementById("all-projects-btn");
 
-let visibleProjects = 6; 
+let visibleProjects = 3; 
 
 function renderProjects() {
     let htmlContent = "";
@@ -54,7 +46,6 @@ function renderProjects() {
                  onmouseenter="playVideo(this)" 
                  onmouseleave="pauseVideo(this)">
                 
-                <!-- NUEVO CONTENEDOR DE MEDIOS -->
                 <div class="media-container">
                     <img src="${project.posterSrc}" class="card-poster" alt="${project.title}">
                     <video class="project-card-video" muted loop playsinline>
@@ -97,9 +88,9 @@ function pauseVideo(cardElement) {
     }
 }
 
-loadMoreBtn.addEventListener("click", () => {
-    visibleProjects += visibleProjects;
-    renderProjects();
+allProjectsBtn.addEventListener("click", () => {
+    
+    window.location.href = `projects.html`;
 });
 
 renderProjects();
