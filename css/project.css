@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  
+  font-family: "Jersey 10", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (orientation: landscape) and (max-width: 4000px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 3000px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 2500px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 2000px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1500px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 750px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 2000px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1500px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1000px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 750px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+
+body {
+  font-family: "Jersey 10", sans-serif;
+  overflow-x: hidden;
+  background-color: #222222;
+  display: flex;
+}
+
+.wrapper {
+  width:100vw;
+  height:100vh;
+}
+
+main {
+    width: 100vw;
+}

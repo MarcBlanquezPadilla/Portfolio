@@ -93,7 +93,7 @@ body {
 
 .wrapper {
   width:100vw;
-  height:100vw;
+  height:100vh;
 }
 
 main {
@@ -104,7 +104,7 @@ main {
     width: 100vw;
     min-height: 100vh; 
     height: auto; 
-    background-color: #333333;
+    background-color: #222222;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +127,7 @@ main {
     width: 100vw;
     min-height: 100vh; 
     height: auto; 
-    background-color: #222222;
+    background-color: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,4 +278,9 @@ main {
     color: white;
     border: 0.4rem solid white;
     box-shadow: 0 0 1.5rem rgba(0, 255, 255, 0.4);
+}
+
+footer {
+
+    background-color: #222222;
 }
