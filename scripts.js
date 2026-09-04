@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll('main > div');
 const navLinks = document.querySelectorAll('.menu a');
-const projectsToShow = [1,5,6]
+const projectsToShow = [8,0,6]
 
 const observerOptions = {
     root: null,
