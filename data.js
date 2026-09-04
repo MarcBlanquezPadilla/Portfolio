@@ -8,7 +8,8 @@ const projects = [
     duration: "3 months",
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/Voxland/releases/tag/v.0.1.0",
-    codeLink: "https://github.com/MarcBlanquezPadilla/Voxland/tree/v.0.1.0/Assets/Scripts"
+    codeLink: "https://github.com/MarcBlanquezPadilla/Voxland/tree/v.0.1.0/Assets/Scripts",
+    projectType: 0
   },
   {
     title: "NIX - The Eternal Night",
@@ -19,7 +20,8 @@ const projects = [
     duration: "3 months",
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/NIX-TheEternalNight/releases/tag/v.0.1.0",
-    codeLink: "https://github.com/MarcBlanquezPadilla/NIX-TheEternalNight/tree/main/Assets/Scripts"
+    codeLink: "https://github.com/MarcBlanquezPadilla/NIX-TheEternalNight/tree/main/Assets/Scripts",
+    projectType: 0
   },
   {
     title: "Kim's Underworld",
@@ -30,7 +32,8 @@ const projects = [
     duration: "4 months",
     tools: "SDL 2 & raylib(C++), XML",
     githubLink: "https://github.com/XaviFast05/Kims-Underworld/releases/tag/GOLD",
-    codeLink: "https://github.com/XaviFast05/Kims-Underworld/tree/main/Juegos_de_desarrollo/Marc/src"
+    codeLink: "https://github.com/XaviFast05/Kims-Underworld/tree/main/Juegos_de_desarrollo/Marc/src",
+    projectType: 0
   },
   {
     title: "Spooky's Candy Quest",
@@ -41,7 +44,8 @@ const projects = [
     duration: "3 months",
     tools: "SDL 2 & raylib(C++), XML",
     githubLink: "https://github.com/MarcBlanquezPadilla/PlatformGame/releases/tag/v.0.3.0",
-    codeLink: "https://github.com/MarcBlanquezPadilla/PlatformGame/tree/main/src"
+    codeLink: "https://github.com/MarcBlanquezPadilla/PlatformGame/tree/main/src",
+    projectType: 0
   },
   {
     title: "CityRun",
@@ -52,7 +56,8 @@ const projects = [
     duration: "3 months",
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/CityRun/releases/tag/v.0.1.0",
-    codeLink: "https://github.com/MarcBlanquezPadilla/CityRun/tree/main/Assets/Scripts"
+    codeLink: "https://github.com/MarcBlanquezPadilla/CityRun/tree/main/Assets/Scripts",
+    projectType: 0
   },
   {
     title: "VVVVVV",
@@ -63,7 +68,8 @@ const projects = [
     duration: "3 months",
     tools: "Unity (C#)",
     githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
-    codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts"
+    codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts",
+    projectType: 0
   },
   {
     title: "Pac-man",
@@ -74,7 +80,8 @@ const projects = [
     duration: "3 months",
     tools: "Box2d & raylib (C++)",
     githubLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/releases/tag/v.0.1.0",
-    codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts"
+    codeLink: "https://github.com/MarcBlanquezPadilla/VVVVVV/tree/main/Assets/Scripts",
+    projectType: 0
   },
   {
     title: "Racing-Game",
@@ -85,6 +92,7 @@ const projects = [
     duration: "3 months",
     tools: "Box2d & raylib (C++)",
     githubLink: "https://github.com/algars15/Racing-game/releases/tag/v1.0",
-    codeLink: "https://github.com/algars15/Racing-game/tree/main/Racing-game/Source"
+    codeLink: "https://github.com/algars15/Racing-game/tree/main/Racing-game/Source",
+    projectType: 0
   }
 ];

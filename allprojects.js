@@ -1,10 +1,14 @@
-const projectsGrid = document.getElementById("projects-grid");
+const engineProjectsGrid = document.getElementById("engine-projects-grid");
+const gameProjectsGrid = document.getElementById("game-projects-grid");
 
 function renderAllProjects() {
-    let htmlContent = "";
-    
+
+    let gameHtml = "";
+    let engineHtml = "";
+
     projects.forEach((project, index) => {
-        htmlContent += `
+
+        let cardHtml = `
             <div class="project-card" 
                  onclick="openProject(${index})"
                  onmouseenter="playVideo(this)" 
@@ -23,9 +27,21 @@ function renderAllProjects() {
                 </div>
             </div>
         `;
+
+        if (project.projectType === 0) {
+            engineHtml += cardHtml;
+        } else if (project.projectType === 1) {
+            gameHtml += cardHtml;
+        }
     });
+
+    if (engineProjectsGrid) {
+        engineProjectsGrid.innerHTML = engineHtml;
+    }
     
-    projectsGrid.innerHTML = htmlContent;
+    if (gameProjectsGrid) {
+        gameProjectsGrid.innerHTML = gameHtml;
+    }
 }
 
 function playVideo(cardElement) {
@@ -48,10 +64,8 @@ function pauseVideo(cardElement) {
     }
 }
 
-// Al hacer clic, nos lleva a la página individual
 function openProject(index) {
     window.location.href = `project.html?id=${index}`;
 }
 
-// ¡Lanzamos la función al cargar la página!
 renderAllProjects();

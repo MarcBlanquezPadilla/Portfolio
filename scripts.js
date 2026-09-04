@@ -91,3 +91,7 @@ allProjectsBtn.addEventListener("click", () => {
 
 renderProjects();
 
+function openProject(index) {
+    window.location.href = `project.html?id=${index}`;
+}
+
