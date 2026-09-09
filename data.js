@@ -1,5 +1,17 @@
 const projects = [
   {
+    title: "Son of Ithaca",
+    videoSrc: "resources/videos/SonOfIthaca.mp4",
+    posterSrc: "resources/posters/sonofithaca.png",
+    description: "Son of Ithaca is an action-adventure game based on The Odyssey, where you play as Telemachus searching for his lost father, Odysseus. With the help of Athena, goddess of wisdom, travel to a mysterious island and explore it to obtain new powers from the almighty gods in the form of equippable masks, then open the portal to the Underworld and face the final challenges.",
+    teamSize: 31,
+    duration: "5 months",
+    tools: "WaveEngine (Own Engine)",
+    githubLink: "https://github.com/NobodyGamesStudio/WaveEngine/releases/tag/v1.0",
+    codeLink: "https://github.com/NobodyGamesStudio/WaveEngine/archive/refs/tags/v1.0.zip",
+    projectType: 1
+  },
+  {
     title: "VOXLAND",
     videoSrc: "resources/videos/Voxland.mp4",
     posterSrc: "resources/posters/quadricula.jpg",
@@ -96,20 +108,8 @@ const projects = [
     projectType: 1
   },
   {
-    title: "Son of Ithaca",
-    videoSrc: "resources/videos/SonOfIthaca.mp4",
-    posterSrc: "resources/posters/sonofithaca.png",
-    description: "Son of Ithaca is an action-adventure game based on The Odyssey, where you play as Telemachus searching for his lost father, Odysseus. With the help of Athena, goddess of wisdom, travel to a mysterious island and explore it to obtain new powers from the almighty gods in the form of equippable masks, then open the portal to the Underworld and face the final challenges.",
-    teamSize: 31,
-    duration: "5 months",
-    tools: "WaveEngine (Own Engine)",
-    githubLink: "https://github.com/NobodyGamesStudio/WaveEngine/releases/tag/v1.0",
-    codeLink: "https://github.com/NobodyGamesStudio/WaveEngine/archive/refs/tags/v1.0.zip",
-    projectType: 1
-  },
-  {
     title: "W16 Engine",
-    videoSrc: "resources/videos/Racing-Game.mp4",
+    videoSrc: "resources/videos/W16Engine.mp4",
     posterSrc: "resources/posters/w16.jpg",
     description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
     teamSize: 2,
@@ -122,7 +122,7 @@ const projects = [
   {
     title: "Wave Engine",
     videoSrc: "resources/videos/Racing-Game.mp4",
-    posterSrc: "resources/posters/sonofithaca.png",
+    posterSrc: "resources/posters/waveengine.jpg",
     description: "Wave Engine is a feature-rich game engine developed as part of the Game Engines course at CITM-UPC. This project integrates several external libraries including Assimp (model loading), DevIL (textures), ImGui (UI), Lua (scripting), and NVIDIA PhysX (physics). The engine focuses on modularity and high-performance rendering, featuring a complete shader pipeline (Blinn-Phong, Gerstner waves), a robust resource management system, and a Lua scripting system for runtime behavior.",
     teamSize: 11,
     duration: "5 months",
