@@ -98,7 +98,7 @@ const projects = [
   {
     title: "Racing-Game",
     videoSrc: "resources/videos/Racing-Game.mp4",
-    posterSrc: "resources/posters/quadricula.jpg",
+    posterSrc: "resources/posters/racinggame.jpg",
     description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
     teamSize: 2,
     duration: "3 months",
@@ -112,7 +112,7 @@ const projects = [
     videoSrc: "resources/videos/W16Engine.mp4",
     posterSrc: "resources/posters/w16.jpg",
     description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
-    teamSize: 2,
+    teamSize: 1,
     duration: "3 months",
     tools: "SDL (C++) | OpenGL 4.6 | ImGui | Assimp | DevIL | PhysX",
     githubLink: "https://github.com/NobodyGamesStudio/WaveEngine/releases/tag/v1.0",
