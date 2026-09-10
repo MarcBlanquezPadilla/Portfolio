@@ -31,18 +31,16 @@ if (projectId !== null && projects[projectId]) {
                     <span><i class="fa-solid fa-screwdriver-wrench" style="color:aqua;"></i> ${project.tools}</span>
                 </div>
 
-                <!-- Descripción del proyecto -->
                 <p style="font-size: 2.5rem; text-align: justify; line-height: 1.6; color: #ddd;">
                     ${project.description}
                 </p>
                 
-                <!-- Botones centrados abajo del todo -->
                 <div style="display: flex; gap: 2rem; margin-top: 2rem; justify-content: center;">
                     <a href="${project.githubLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="${project.codeLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
-                        <i class="fa fa-code"></i> Code
+                    <a href="${project.buildLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                        <i class="fa fa-code"></i> Build
                     </a>
                 </div>
             </div>
