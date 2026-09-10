@@ -12,6 +12,30 @@ const projects = [
     projectType: 1
   },
   {
+    title: "Paraules màgiques",
+    videoSrc: "resources/videos/ParaulesMagiques.mp4",
+    posterSrc: "resources/posters/paraulesmagiques.jpg",
+    description: "Paraules Màgiques is an educational children's game created by Torrats Games where you help the Bruixa Avorrida find her lost mice. Drag the correct letters to form words, use the owl's hints if you get stuck, and beat three difficulty levels. Furthermore, you can unlock a time trial mode to test your mental agility and vocabulary.",
+    teamSize: 3,
+    duration: "1 month",
+    tools: "Unity (C#)",
+    githubLink: "https://github.com/MarcBlanquezPadilla/Paraules-Magiques",
+    buildLink: "https://github.com/NobodyGamesStudio/WaveEngine/releases/tag/v1.0",
+    projectType: 1
+  },
+  {
+    title: "Odossea",
+    videoSrc: "resources/videos/Odossea.mp4",
+    posterSrc: "resources/posters/odossea.jpg",
+    description: "Odossea is a chaotic co-op puzzle-platformer where you control soft-body characters through a unique mechanic: mass sharing. Work as a team to transfer weight between each other, alter your shapes, and overcome obstacles that are physically impossible to beat solo. Coordinate, tackle unpredictable physics, and survive hilarious disasters to reach the end of each level.",
+    teamSize: 5,
+    duration: "1 week",
+    tools: "Unity (C#)",
+    githubLink: "https://github.com/oscaralonsoo/Odossea",
+    buildLink: "https://torratsgames.itch.io/odossea",
+    projectType: 1
+  },
+  {
     title: "VOXLAND",
     videoSrc: "resources/videos/Voxland.mp4",
     posterSrc: "resources/posters/voxland.jpg",
@@ -111,7 +135,7 @@ const projects = [
     title: "W16 Engine",
     videoSrc: "resources/videos/W16Engine.mp4",
     posterSrc: "resources/posters/w16.jpg",
-    description: "Racing Game is a top-down 2D racing game that parodies the world of Formula 1 with humor and a retro pixel art style. Choose from a roster of comically named drivers and compete on various circuits against opponents controlled by their own unique AI that reacts to the player's actions. The objective is to master the track, execute precise overtakes, and be the first to cross the finish line. Gameplay is focused on pure arcade competition, rewarding skill in cornering and speed management in fast-paced, addictive races. <br><br>This project was developed by a team of 4 people (2 programmers and 2 artists).",
+    description: "W16 ENGINE is a custom 3D game engine developed in C++ from scratch, focused on modularity, performance optimization, and providing a user-friendly interface. Built on a robust component-based architecture, it features an advanced resource management system, full scene serialization, and precise object selection. Its standout features include a high-level Skeletal Animation System (combining CPU bone calculations with GPU vertex skinning) and a comprehensive high-level Physics System powered by PhysX, complete with full joint support.",
     teamSize: 1,
     duration: "3 months",
     tools: "SDL (C++) | OpenGL 4.6 | ImGui | Assimp | DevIL | PhysX",
