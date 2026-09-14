@@ -5,41 +5,64 @@ if (projectId !== null && projects[projectId]) {
     
     const project = projects[projectId];
     const container = document.getElementById('single-project-container');
+    
+    let contributionsHtml = "";
+    if (project.contributions && project.contributions.length > 0) {
+        contributionsHtml = `
+            <div class="sp-contributions">
+                <h3>🔧 My Contributions</h3>
+                <ul>
+                    ${project.contributions.map(item => `
+                        <li><i class="fa-solid fa-check"></i> ${item}</li>
+                    `).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    let awardHtml = "";
+    if (project.award) {
+        awardHtml = `
+            <div class="sp-award">
+                <i class="fa-solid fa-trophy"></i>
+                <span>${project.award}</span>
+            </div>
+        `;
+    }
 
     container.innerHTML = `
-        <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center; padding-bottom: 5rem;">
+        <div class="sp-wrapper">
             
-            <div style="width: 100%; max-width: 95rem; display: flex; flex-direction: column; gap: 3rem;">
-                
-                <h1 style="font-size: 6rem; color: aqua; margin: 0; text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">
-                    ${project.title}
-                </h1>
+            <div class="sp-container">
+                <h1 class="sp-title">${project.title}</h1>
+                <!-- Inyectamos el trofeo justo debajo del título -->
+                ${awardHtml}
             </div>
 
-            <div style="width: 100%; max-width: 95rem;">
-                <video style="width: 100%; border: 0.3rem solid aqua; border-radius: 1rem; box-shadow: 0 1rem 3rem rgba(0, 255, 255, 0.1);" loop autoplay muted controls playsinline poster="${project.posterSrc}">
+            <div class="sp-container">
+                <video class="sp-video" loop autoplay muted controls playsinline poster="${project.posterSrc}">
                     <source src="${project.videoSrc}" type="video/mp4">
                 </video>
             </div>
 
-
-            <div style="width: 100%; max-width: 95rem; display: flex; flex-direction: column; gap: 3rem;">
-                
-                <div style="display: flex; gap: 3rem; font-size: 2.2rem; background-color: #333; padding: 2rem; border-radius: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <span><i class="fa-solid fa-users" style="color:aqua;"></i> ${project.teamSize}</span>
-                    <span><i class="fa-solid fa-clock" style="color:aqua;"></i> ${project.duration}</span>
-                    <span><i class="fa-solid fa-screwdriver-wrench" style="color:aqua;"></i> ${project.tools}</span>
+            <div class="sp-container">
+                <div class="sp-pills">
+                    <span><i class="fa-solid fa-users"></i> ${project.teamSize}</span>
+                    <span><i class="fa-solid fa-clock"></i> ${project.duration}</span>
+                    <span><i class="fa-solid fa-screwdriver-wrench"></i> ${project.tools}</span>
                 </div>
 
-                <p style="font-size: 2.5rem; text-align: justify; line-height: 1.6; color: #ddd;">
+                <p class="sp-description">
                     ${project.description}
                 </p>
                 
-                <div style="display: flex; gap: 2rem; margin-top: 2rem; justify-content: center;">
-                    <a href="${project.githubLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                ${contributionsHtml}
+                
+                <div class="sp-buttons">
+                    <a href="${project.githubLink}" target="_blank" class="sp-btn">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a>
-                    <a href="${project.buildLink}" target="_blank" style="padding: 1rem 4rem; border: 0.3rem solid aqua; color: white; font-size: 2.5rem; border-radius: 1rem; transition: 0.3s; text-align: center; min-width: 20rem;" onmouseover="this.style.backgroundColor='aqua'; this.style.color='#222'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+                    <a href="${project.buildLink}" target="_blank" class="sp-btn">
                         <i class="fa fa-code"></i> Build
                     </a>
                 </div>
