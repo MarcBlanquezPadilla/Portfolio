@@ -35,7 +35,6 @@ if (projectId !== null && projects[projectId]) {
             
             <div class="sp-container">
                 <h1 class="sp-title">${project.title}</h1>
-                <!-- Inyectamos el trofeo justo debajo del título -->
                 ${awardHtml}
             </div>
 
