@@ -238,11 +238,14 @@ body {
 }
 
 @keyframes words {
-    0%,50% {
+    0%,33% {
         content:"student";
     }
-    51%,100% {
+    34%,66% {
         content:"gameplay programmer";
+    }
+    67%,100% {
+        content:"engine programmer";
     }
 }
 
