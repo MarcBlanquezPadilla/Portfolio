@@ -10,13 +10,14 @@ function renderAllProjects() {
 
         let cardHtml = `
             <div class="project-card" 
-                 onclick="openProject(${index})"
-                 onmouseenter="playVideo(this)" 
-                 onmouseleave="pauseVideo(this)">
+                onclick="openProject(${index})"
+                onmouseenter="playVideo(this)" 
+                onmouseleave="pauseVideo(this)">
                 
                 <div class="media-container">
-                    <img src="${project.posterSrc}" class="card-poster" alt="${project.title}">
-                    <video class="project-card-video" muted loop playsinline>
+                    <img src="${project.posterSrc}" class="card-poster" alt="${project.title}" loading="lazy">
+                    
+                    <video class="project-card-video" muted loop playsinline poster="${project.posterSrc}" preload="none">
                         <source src="${project.videoSrc}" type="video/mp4">
                     </video>
                 </div>
