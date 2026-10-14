@@ -9,6 +9,7 @@ const projects = [
       "Engineered the core scene management architecture, ensuring seamless flow, loading, and transitions between UI menus and gameplay states.",
       "Programmed a robust data persistence and save-game system to accurately track, serialize, and store player progress across sessions."
     ],
+    award: "Nominated for Best Academic Game at SAGA 2026 - Indie Dev Day",
     teamSize: 31,
     duration: "5 months",
     tools: "WaveEngine (Own Engine)",
