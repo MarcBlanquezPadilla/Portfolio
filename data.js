@@ -18,6 +18,23 @@ const projects = [
     projectType: 1
   },
   {
+    title: "Estik",
+    videoSrc: "resources/videos/TrailerEstik.mp4",
+    posterSrc: "resources/posters/Estik.webp",
+    description: "Estik is an arcade-style field hockey game with a mini-golf twist. Instead of controlling players on a pitch, you directly control the ball across challenging obstacle courses. Strike the ball dynamically—even while it's in motion—to navigate hazards, clear the track, and score the ultimate goal at the end of each level.",
+    contributions: [
+      "Gameplay Programmer: Programmed the complete ball behavior and player movement mechanics, along with the core level flow and game progression systems.",
+      "Level Designer & 3D Artist: Designed engaging obstacle courses and managed the 3D asset pipeline, including modeling and texturing custom game assets.",
+      "Graphics Programmer: Developed custom shaders to enhance the visual style and environmental effects across the different courses."
+    ],
+    teamSize: 4,
+    duration: "1 months",
+    tools: "Unity (C#)",
+    githubLink: "https://github.com/oscaralonsoo/BitllesGame",
+    buildLink: "https://github.com/oscaralonsoo/BitllesGame/releases/tag/v1.0",
+    projectType: 1
+  },
+  {
     title: "Paraules màgiques",
     videoSrc: "resources/videos/ParaulesMagiques.mp4",
     posterSrc: "resources/posters/paraulesmagiques.webp",
