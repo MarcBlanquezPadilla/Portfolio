@@ -31,7 +31,7 @@ const projects = [
     duration: "1 months",
     tools: "Unity (C#)",
     githubLink: "https://github.com/oscaralonsoo/BitllesGame",
-    buildLink: "https://github.com/oscaralonsoo/BitllesGame/releases/tag/v1.0",
+    buildLink: "https://oalonsoo.itch.io/estik",
     projectType: 1
   },
   {
