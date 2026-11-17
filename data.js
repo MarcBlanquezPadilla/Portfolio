@@ -24,11 +24,11 @@ const projects = [
     description: "Estik is an arcade-style field hockey game with a mini-golf twist. Instead of controlling players on a pitch, you directly control the ball across challenging obstacle courses. Strike the ball dynamically—even while it's in motion—to navigate hazards, clear the track, and score the ultimate goal at the end of each level.",
     contributions: [
       "Gameplay Programmer: Programmed the complete ball behavior and player movement mechanics, along with the core level flow and game progression systems.",
-      "Level Designer & 3D Artist: Designed engaging obstacle courses and managed the 3D asset pipeline, including modeling and texturing custom game assets.",
+      "Level Designer & 3D Artist: Designed engaging obstacle courses and modeled custom game assets.",
       "Graphics Programmer: Developed custom shaders to enhance the visual style and environmental effects across the different courses."
     ],
     teamSize: 4,
-    duration: "1 months",
+    duration: "1 month",
     tools: "Unity (C#)",
     githubLink: "https://github.com/oscaralonsoo/BitllesGame",
     buildLink: "https://oalonsoo.itch.io/estik",
